@@ -19,4 +19,4 @@ while nok:
 
 for i in range(len(liste_donneurs)):
     with open(f"{liste_donneurs[i]}.txt", "w") as file:
-        file.write(f"Ton cadeau ira à {liste_receveurs[i]}")
+        file.write(f"Ton cadeau ira à {liste_receveurs[i]}\nRappel du budjet entre 10 et 15e max")
