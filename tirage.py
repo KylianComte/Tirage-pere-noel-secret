@@ -3,6 +3,7 @@
 import random
 
 liste_donneurs = ["Kylian","Rayan","Mathieu","Martin","Youssef","Mathis","Arno","Mael","Corentin","Quentin"]
+budjet = [10,15]
 
 liste_receveurs = liste_donneurs.copy()
 random.shuffle(liste_receveurs)
@@ -19,4 +20,4 @@ while nok:
 
 for i in range(len(liste_donneurs)):
     with open(f"{liste_donneurs[i]}.txt", "w") as file:
-        file.write(f"Ton cadeau ira à {liste_receveurs[i]}\nRappel du budjet entre 10 et 15e max")
+        file.write(f"Ton cadeau ira à {liste_receveurs[i]}\nRappel du budjet entre {budjet[0]} et {budjet[1]}e max")
